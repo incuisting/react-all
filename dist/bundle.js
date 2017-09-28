@@ -65,10 +65,15 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-document.getElementById('app').innerHTML = 'Webpack works'
+"use strict";
 
+
+var func = function func(str) {
+    document.getElementById('app').innerHTML = str;
+};
+func('我现在在使用Babel!');
 
 /***/ })
 /******/ ]);
